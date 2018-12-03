@@ -1,0 +1,42 @@
+
+
+
+This README file explains how to run the programs for
+"bet-api, compiled on Java8 , SpringBoot , with STS IDE , also some of the scenarios/approach covered/used.
+
+This program is also available in
+
+Git with this url - https://github.com/rijuvfrancis/bet-api.git     (rijuvfrancis/github123)
+
+and in AWS Elastic Bean Server - http://kambhi.us-east-2.elasticbeanstalk.com/stakes 
+
+---- RUN IN AN IDE ----
+
+You can run this in Eclipse / STS(Spring Tool Suite).
+If you want to run the program in an IDE, such as Eclipse, you should
+be able to copy the entire contents of any one of the chapter folders
+into a project in the IDE, and then run the programs.
+Extract the file from the Git Repository , Download the file from Git Repository , import the Archive file or Repository Contents to your workspace.
+
+STS IDE , you can run tasks either by run as SpringBoot App or from Java class ,in Eclipse , start from BetApiApplication class , run as normal java application.
+
+
+---- Scenarios/Approach ----
+
+1. Rest API used for http calls.
+2. long is used instead of 31 bit unsigned integer
+3. Logging is included to verify and monitor the result in Console.No frameworks used.
+4. Streams used to whenever possible.
+5. Additional package created for logging and exception.
+6. Devtools added to autodeploy the changes.
+7. Modify Server port to run in 8001 port.
+
+---- Scenarios/Approach Not covered ----
+
+1. Non performance requirements , threading. Instead application is made available in AWS to handle simultaneous requests.
+2. Exception class written to scale it for future use. In case of No Customer for a particular Stake we are passing Empty List.
+3. Additionaly written API to verify in Cloud (http://localhost:8001/stakes/?sessionkey=06C39B1B3909EB43E8B6FAF1DFD6A952), but its not part of functionality.
+
+---- Time taken ----
+
+Started working on this Saturday , Sunday and Today , took 8 hours.
