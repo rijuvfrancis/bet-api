@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: bet-api
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Riju
+Implementation-Vendor-Id: com.kambhi
+Build-Jdk: 1.8.0_191
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/bet-api
+Created-By: Maven Integration for Eclipse
+
