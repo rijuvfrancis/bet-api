@@ -2,7 +2,6 @@ package com.kambhi.betapi;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.BinaryOperator;
@@ -10,7 +9,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.validation.constraints.Max;
 
 import org.springframework.stereotype.Service;
 
@@ -61,7 +59,7 @@ public class BetApplicationService {
 				.limit(20).collect(Collectors.toList());
 		Logger.info("sortedStream" + sortedList.toString());
 
-		// Formatting the sorted stakes list eg: 1234=4500,57453=1337 
+		// Formatting the sorted stakes list eg: 1234=4500,57453=1337
 		sortedList.stream().collect(Collectors.toList()).forEach(value -> {
 
 			sortedFormattedlist.add(sortedList.get(i).customerId + "=" + sortedList.get(i).getStake());
