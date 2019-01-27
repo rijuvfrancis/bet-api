@@ -1,6 +1,12 @@
 package com.kambhi.betapi;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Bet {
+	
+	@Id
 	long customerId;
 	long betOfferId;
 	long stake;
