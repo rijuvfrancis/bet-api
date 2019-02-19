@@ -38,5 +38,4 @@ In STS IDE , you can run tasks either by specifying run as SpringBoot App or fro
 3. Additionaly written API to verify in Cloud (http://localhost:8001/stakes/?sessionkey=06C39B1B3909EB43E8B6FAF1DFD6A952), but its not part of functionality.
 
 ---- Time taken ----
-
-Started working on this Saturday , Sunday and Today , took 8 hours.
+8 hours.
